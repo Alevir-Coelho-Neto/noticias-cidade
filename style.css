@@ -72,7 +72,6 @@ ul{
 }
 /*Caixa*/
 #conteudo{
-    background: #f5f5f5;
     margin-top: 60px;
 }
 
@@ -129,11 +128,30 @@ ul{
     float: left;
 }
 
+
+/*Uma coluna*/
+
 #uma-coluna #primario{
     margin: 0 0 20px;
     width: 750px;
 
 }
+
+#uma-coluna #primario .caixa-conteudo h2{
+    font-size: 0.8em;
+    margin-top: 3px;
+    margin-left: 1px;
+    margin-bottom: 2px;
+    padding: 3px;
+    padding-bottom: 0px;
+    color: white;
+    background-color: red;
+    width: 110px;
+}
+
+
+
+
 
 #secundario{
     float: left;
@@ -241,7 +259,9 @@ ul{
 }
 
 .resumo-img-tres-colunas{
-    padding-top: 2px;
+    display: inline-block;
+    padding-top: 4px;
+    word-break: break-all;
 }
 
 .link-img-tres-colunas a{
@@ -250,6 +270,11 @@ ul{
     color: #b10333;
     padding-top: 3px;
     text-decoration: none;
+}
+
+.link-img-tres-colunas a.doutor{
+    margin-bottom: 18px;
+    padding-top: 5px;
 }
 
 .link-img-tres-colunas a:hover{
@@ -263,30 +288,51 @@ ul{
 #mundo li {
     padding: 2px;
     border-bottom: 1px solid #ccc;
-    height: 62px;
+    height: 105px;
 }
 
 #mundo li img{
     float: left;
     margin: 5px;
-    width: 80px;
+    margin-top: 10px;
+    width: 90px;
+    height: 90px;
 }
 
 #mundo li h5{
-    font-size: 0.8em;
-    padding-top: 3px;
+    font-size: 14px;
+    padding-top: 7px;
     color: #3e7ab9;
+    margin-bottom: 1px;
 }
 
 #mundo li a p{
-    font-size: 0.7em;
+    font-size: 0.8em;
     border-bottom: none;
     color: black;
+    margin-right: 2px;
+    display: block;
 }
 
 #mundo li:hover{
     background-color: #eee;
     cursor: pointer;
+}
+
+#container-rodape{
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.clear{
+    clear: both;
 }
 
 
