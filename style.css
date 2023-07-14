@@ -223,7 +223,7 @@ ul{
 
 #primario .caixa-conteudo h4{
     background-color: #b10333;
-    width: 110px;
+    width: 44%;
     color: white;
     font-size: 0.8em;
     margin-top: 5px;
@@ -233,7 +233,7 @@ ul{
 
 #secundario .caixa-conteudo h4{
     background-color: #de003e;
-    width: 182px;
+    width: 72%;
     color: black;
     font-size: 0.8em;
     margin-top: 5px;
