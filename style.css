@@ -8,17 +8,30 @@ body{
     background: #fff url(./imagens/fundo.png) repeat-x;
 }
 
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Raleway:wght@200&display=swap');
+
+
+
 /*Logo*/
 
-#principal{
+/*#principal{
     width: 750px;
     margin: 0 auto;
 }
+*/
+
+#menu-topo{
+    color: white;
+}
 
 #topo{
-    height: 150px;
+    width: 750px;
+    height: 154px;
+    margin: 0 auto;
     padding-top: 25px;
-    background: url(./imagens/detalhe-topo.png) no-repeat right top;
+    background: url(./imagens/detalhe-topo.png) padding-box no-repeat right;
 }
 
 #logo h1{
@@ -71,14 +84,17 @@ ul{
     cursor: no-drop;
 }
 /*Caixa*/
+
 #conteudo{
+    width: 70%;
+    margin: 0 auto;
     margin-top: 60px;
 }
 
 #primario{
     float: left;
-    width: 270px;
-    margin: 0 0 20px 195px;
+    width:43% /*450px*/;
+    margin: 0 0 20px 200px;
 }
 
 /*Duas colunas*/
@@ -146,19 +162,19 @@ ul{
     padding-bottom: 0px;
     color: white;
     background-color: red;
-    width: 110px;
+    width: 15%;
 }
 
 #secundario{
     float: left;
-    width: 270px;
+    width: 34%; /*350px*/
     margin: 0 0 20px 15px;
 }
 
 #lateral{
     float: left;
     width: 180px;
-    margin: 0 0 20px -750px;
+    margin: 0 0 20px -97%;
 }
 
 .caixa{
@@ -168,10 +184,12 @@ ul{
 }
 
 .caixa h3{
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 1em;
     background: #294c71;
     color: #fff;
     padding: 5px;
+    letter-spacing: 0.1em;
 }
 
 .caixa-conteudo{
@@ -219,7 +237,7 @@ ul{
 
 #primario .caixa-conteudo h4{
     background-color: #b10333;
-    width: 44%;
+    width: 26%;
     color: white;
     font-size: 0.8em;
     margin-top: 5px;
@@ -229,7 +247,7 @@ ul{
 
 #secundario .caixa-conteudo h4{
     background-color: #de003e;
-    width: 72%;
+    width: 54%;
     color: black;
     font-size: 0.8em;
     margin-top: 5px;
@@ -257,24 +275,37 @@ ul{
 .resumo-img-tres-colunas{
     display: inline-block;
     padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
     word-break: break-all;
 }
 
-.link-img-tres-colunas a{
-    display: block;
-    width: 75px;
-    color: #b10333;
-    padding-top: 3px;
-    text-decoration: none;
+.resumo-img-tres-colunas p.doutor{
+    margin-right: 10px;
+    color: black;
 }
 
-.link-img-tres-colunas a.doutor{
-    margin-bottom: 18px;
-    padding-top: 5px;
+.link-img-tres-colunas a:link, .link-img-tres-colunas a:visited{
+    display: block;
+    text-decoration: none;
+    color: #b10333;
+    width: 75px;
+    margin-top: 3px;
+    margin-left: 7px;
+    margin-bottom: 5px;
 }
 
 .link-img-tres-colunas a:hover{
     text-decoration: underline;
+}
+
+.link-img-tres-colunas a.doutor{
+    margin-bottom: 29px;
+}
+
+ul#mundo.tecnologia li a p{
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
 }
 
 #mundo a{
@@ -284,30 +315,34 @@ ul{
 #mundo li {
     padding: 2px;
     border-bottom: 1px solid #ccc;
-    height: 105px;
+    height: 108px;
 }
 
 #mundo li img{
     float: left;
     margin: 5px;
     margin-top: 10px;
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 95px;
 }
 
 #mundo li h5{
     font-size: 14px;
-    padding-top: 7px;
+    padding-top: 8px;
     color: #3e7ab9;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-left: 135px;
 }
 
 #mundo li a p{
-    font-size: 0.8em;
+    font-size: 0.9em;
     border-bottom: none;
     color: black;
     margin-right: 2px;
     display: block;
+    padding-left: 135px;
 }
 
 #mundo li:hover{
