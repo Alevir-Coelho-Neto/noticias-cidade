@@ -149,10 +149,6 @@ ul{
     width: 110px;
 }
 
-
-
-
-
 #secundario{
     float: left;
     width: 270px;
@@ -241,16 +237,16 @@ ul{
     margin-bottom: 2px;
 }
 
-#lateral input#submit{
+#lateral input.submit{
     color: white;
     background-color: #b10333;
     margin-top: 5px;
     width: 100px;
     height: 30px;
     border: 2px solid #870529;
-    display: block;
     margin-top: 6px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .img-tres-colunas{
