@@ -212,7 +212,7 @@ ul{
 .caixa-conteudo #navegacao-lateral-tres-colunas, .caixa-conteudo #navegacao-lateral-duas-colunas{
     line-height: 35px;
     text-indent: 5px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .caixa-conteudo #navegacao-lateral-tres-colunas li, .caixa-conteudo #navegacao-lateral-duas-colunas li{
@@ -284,11 +284,13 @@ ul{
 }
 
 .resumo-img-tres-colunas{
+    font-family: 'Lato', sans-serif;
     display: inline-block;
     padding-top: 4px;
     padding-left: 7px;
     padding-right: 7px;
     word-break: break-all;
+    
 }
 
 .resumo-img-tres-colunas p.doutor{
