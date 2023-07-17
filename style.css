@@ -16,12 +16,6 @@ body{
 
 /*Logo*/
 
-/*#principal{
-    width: 750px;
-    margin: 0 auto;
-}
-*/
-
 #menu-topo{
     color: white;
 }
@@ -85,13 +79,13 @@ ul{
 }
 /*Caixa*/
 
-#conteudo{
+#conteudo-tres-colunas{
     width: 70%;
     margin: 0 auto;
     margin-top: 60px;
 }
 
-#primario{
+#primario-tres-colunas{
     float: left;
     width:43% /*450px*/;
     margin: 0 0 20px 200px;
@@ -99,12 +93,25 @@ ul{
 
 /*Duas colunas*/
 
+#conteudo-duas-colunas{
+    margin: 0 auto;
+    width: 750px;
+    margin-top: 60px;
+}
+
+.caixa-conteudo #mundo li{
+    height: 110px;
+    border-bottom: 1px solid #ccc;
+}
+
 #duas-colunas #primario{
     width: 555px;
+    float: right;
 }
 
 #duas-colunas #primario .caixa-conteudo{
     padding-left: 5px;
+    
 }
 
 #duas-colunas #primario .caixa-conteudo h2{
@@ -116,6 +123,11 @@ ul{
     padding-left: 3px;
     margin-top: 3px;
     
+}
+
+#lateral-duas-colunas{
+    width: 180px;
+    float: left;
 }
 
 .link-img-duas-colunas a:link, .link-img-duas-colunas a:visited{
@@ -161,7 +173,6 @@ ul{
     padding: 3px;
     padding-bottom: 0px;
     color: white;
-    background-color: red;
     width: 15%;
 }
 
@@ -171,7 +182,7 @@ ul{
     margin: 0 0 20px 15px;
 }
 
-#lateral{
+#lateral-tres-colunas{
     float: left;
     width: 180px;
     margin: 0 0 20px -97%;
@@ -198,35 +209,35 @@ ul{
     margin-top: 5px;
 }
 
-.caixa-conteudo #navegacao-lateral{
+.caixa-conteudo #navegacao-lateral-tres-colunas, .caixa-conteudo #navegacao-lateral-duas-colunas{
     line-height: 35px;
     text-indent: 5px;
     font-size: 0.9em;
 }
 
-.caixa-conteudo #navegacao-lateral li{
+.caixa-conteudo #navegacao-lateral-tres-colunas li, .caixa-conteudo #navegacao-lateral-duas-colunas li{
     border-bottom: 1px solid rgb(237, 234, 234);
 }
 
-.caixa-conteudo #navegacao-lateral li a{
+.caixa-conteudo #navegacao-lateral-tres-colunas li a, .caixa-conteudo #navegacao-lateral-duas-colunas li a{
     display: block;
     text-decoration: none;
     color: black;    
 }
 
-.caixa-conteudo #navegacao-lateral li a:hover{
+.caixa-conteudo #navegacao-lateral-tres-colunas li a:hover, .caixa-conteudo #navegacao-lateral-duas-colunas li a:hover{
     padding-left: 17px;
     color: #a1a1a1;
     background: #f9f9f9 url(./imagens/marcador.png) no-repeat left center;
 }
 
-#lateral label{
+#lateral-tres-colunas label, #lateral-duas-colunas label{
     display: block;
     cursor: pointer;
     padding-left: 5px;
 }
 
-#lateral input#email{
+#lateral-tres-colunas input#email, #lateral-duas-colunas input#email{
     margin-top: 5px;
     width: 130px;
     height: 25px; 
@@ -235,7 +246,7 @@ ul{
     padding-left: 2px;
 }
 
-#primario .caixa-conteudo h4{
+#primario-tres-colunas .caixa-conteudo h4{
     background-color: #b10333;
     width: 26%;
     color: white;
@@ -255,7 +266,7 @@ ul{
     margin-bottom: 2px;
 }
 
-#lateral input.submit{
+#lateral-tres-colunas input.submit, #lateral-duas-colunas input.submit{
     color: white;
     background-color: #b10333;
     margin-top: 5px;
@@ -303,8 +314,32 @@ ul{
     margin-bottom: 29px;
 }
 
+#mundo li a p{
+    font-size: 0.9em;
+    border-bottom: none;
+    margin-right: 2px;
+    color: #000;
+    display: block;
+    padding-left: 135px;
+}
+
+#mundo li h5{
+    font-size: 14px;
+    padding-top: 8px;
+    color: #3e7ab9;
+    margin-bottom: 3px;
+    font-size: 1.2em;
+    padding-left: 135px;
+}
+
 ul#mundo.tecnologia li a p{
     font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+ul#mundo.noticias-mundo li a p{
+    font-size: 15px;
+    margin-right: 3px; 
     font-family: 'Lato', sans-serif;
 }
 
@@ -312,7 +347,7 @@ ul#mundo.tecnologia li a p{
     text-decoration: none;
 }
 
-#mundo li {
+#mundo.tecnologia li, #mundo.noticias-mundo li {
     padding: 2px;
     border-bottom: 1px solid #ccc;
     height: 108px;
@@ -324,25 +359,6 @@ ul#mundo.tecnologia li a p{
     margin-top: 10px;
     width: 120px;
     height: 95px;
-}
-
-#mundo li h5{
-    font-size: 14px;
-    padding-top: 8px;
-    color: #3e7ab9;
-    margin-bottom: 2px;
-    font-size: 1em;
-    text-transform: uppercase;
-    padding-left: 135px;
-}
-
-#mundo li a p{
-    font-size: 0.9em;
-    border-bottom: none;
-    color: black;
-    margin-right: 2px;
-    display: block;
-    padding-left: 135px;
 }
 
 #mundo li:hover{
